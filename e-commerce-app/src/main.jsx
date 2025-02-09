@@ -8,12 +8,16 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+    children:[
+      {
+        path: "/home",
+        element: <Homepage />,
+      },
+
+    ]
   
   },
-  {
-    path: "/home",
-    element: <Homepage />,
-  },
+
   {
     path: "*", // Catch-all for non-existent routes
     element: <ErrorPage />,
