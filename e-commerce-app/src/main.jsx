@@ -1,7 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Homepage from './Home.jsx'
+import HomePageMain from './RoutePages/HomePageMain.jsx'
+import ProductDetailMain from './RoutePages/ProductDetailMain.jsx'
 import App from './App.jsx'
+import './index.css'
 import ErrorPage from './Error.jsx'
 import { createBrowserRouter, RouterProvider,} from 'react-router-dom'
 const router = createBrowserRouter([
@@ -10,8 +12,13 @@ const router = createBrowserRouter([
     element: <App />,
     children:[
       {
-        path: "/home",
-        element: <Homepage />,
+        path: "",
+        element: <HomePageMain />,
+      },
+     
+      {
+        path: "/ProductDetails",
+        element: <ProductDetailMain />,
       },
 
     ]
@@ -19,7 +26,7 @@ const router = createBrowserRouter([
   },
 
   {
-    path: "*", // Catch-all for non-existent routes
+    path: "*", 
     element: <ErrorPage />,
   },
 ]);

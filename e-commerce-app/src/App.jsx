@@ -1,5 +1,6 @@
+import AdvertPage from "./AdvertHeaderPage/AdvertHeader";
+import { NavLink ,Outlet } from "react-router-dom";
 
-import { NavLink } from "react-router-dom";
 
 
 
@@ -13,9 +14,14 @@ function App() {
 
   return (
 <div>
-  
+  <AdvertPage/>
 
-  <h1>this is the home app page </h1>
+
+
+  <Outlet/>
+
+
+ 
 
 </div>
   )
