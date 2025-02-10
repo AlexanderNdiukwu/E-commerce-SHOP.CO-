@@ -5,8 +5,8 @@ const AdvertPage = () => {
     return ( 
     
     <div >
-        <div className="bg-black text-white h-9 text-base grid sm:grid-cols-2 lg:grid-cols-12 text-center ">
-            <p className="text-center lg:col-span-11 my-0.5 md:bg-pink-900 ">
+        <div className="bg-black text-white h-9 text-base grid sm:grid-cols-1 md:grid-cols-12 text-center ">
+            <p className="text-center md:col-span-11 my-0.5">
             sign up to get 20% off your first order. sign up now
 
             </p>
