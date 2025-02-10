@@ -16,7 +16,8 @@ function App() {
   return (
 <div>
   <AdvertPage/>
-  <Navbar/>
+   <Navbar/>
+   
 
 
 
