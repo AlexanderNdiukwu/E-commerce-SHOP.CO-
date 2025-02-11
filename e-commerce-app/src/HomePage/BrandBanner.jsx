@@ -1,7 +1,7 @@
 const BrandBanner = () => {
-    return ( <div>
+    return ( <div className="lg:mx-24">
 
-<div className="grid grid-cols-5 gap-4 mt-4 bg-black">
+<div className="grid grid-cols-5 gap-4 ">
     <div>
         <img src="/images/BrandBanner/versace.png" alt="versace" />
     </div>
