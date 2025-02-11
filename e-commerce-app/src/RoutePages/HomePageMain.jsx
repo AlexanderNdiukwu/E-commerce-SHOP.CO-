@@ -6,6 +6,7 @@ import TopSell from "../HomePage/TopSell";
 import BrowseDesigns from "../BrowseDesigns/BrowseDesigns";
 import Reviews from "../Reviews/Reviews";
 import MainFooter from "../Footer/MainFooter";
+import MainForm from "../EmailForm/MainForm";
 
 
 function HomePageMain() {
@@ -32,7 +33,12 @@ function HomePageMain() {
     <BrowseDesigns />
 
     <Reviews/>
+    
+    <div className="bg-[#F0F0F0]">
+     <MainForm/> 
     <MainFooter/>
+
+    </div>
 
 
 

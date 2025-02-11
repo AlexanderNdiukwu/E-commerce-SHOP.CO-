@@ -12,9 +12,9 @@ const Footerdets = () => {
         </div>
 
 
-        <div className="flex gap-1 ">
+        <div className="flex gap-4 items-center ">
             <p><img src="/images/FooterImages/twitter.png" alt="twitter" /></p>
-            <p><img src="/images/FooterImages/facebook.png" alt="facebook" className="bg-black rounded-4xl p-0.5" /></p>
+            <p><img src="/images/FooterImages/facebook.png" alt="facebook" className="bg-black rounded-4xl pt-0.5" /></p>
             <p><img src="/images/FooterImages/snapchat.png" alt="snapchat" /></p>
             <p><img src="/images/FooterImages/github.png" alt="github" /></p>
         </div>
