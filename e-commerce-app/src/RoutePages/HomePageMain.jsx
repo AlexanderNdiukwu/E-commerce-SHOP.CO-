@@ -5,6 +5,7 @@ import NewArrivals from "../HomePage/NewArrivals";
 import TopSell from "../HomePage/TopSell";
 import BrowseDesigns from "../BrowseDesigns/BrowseDesigns";
 import Reviews from "../Reviews/Reviews";
+import MainFooter from "../Footer/MainFooter";
 
 
 function HomePageMain() {
@@ -31,6 +32,7 @@ function HomePageMain() {
     <BrowseDesigns />
 
     <Reviews/>
+    <MainFooter/>
 
 
 
