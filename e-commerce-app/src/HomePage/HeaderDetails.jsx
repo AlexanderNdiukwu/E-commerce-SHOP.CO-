@@ -57,8 +57,8 @@ const HeaderDetails = () => {
 
 <div className=" h-full">
 
-    <div className=" overflow-hidden w-full ">
-        <img src="/images/MainHeadPhoto.png" alt="headMain" className="relative   right-50   h-[31rem] " />
+    <div className=" overflow-hidden w-full  h-full">
+        <img src="/images/MainHeadPhoto.png" alt="headMain" className="object-fit  h-full relative right-48 " />
     </div>
 
 </div>

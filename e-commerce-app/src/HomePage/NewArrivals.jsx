@@ -2,7 +2,7 @@ import Card from "../CardComponent.jsx/Card";
 import View from "../ViewButton/View";
 
 const NewArrivals = () => {
-    return ( <div className="lg:mx-24">
+    return ( <div className="lg:mx-24 border-b-2 border-[#F0F0F0]">
     
 
     <div>

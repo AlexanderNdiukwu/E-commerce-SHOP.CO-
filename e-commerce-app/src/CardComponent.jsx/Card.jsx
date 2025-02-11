@@ -1,11 +1,13 @@
-const Card = ({ProductImage,desc,rating,price,OriginalPrice,discount,imageFit}) => {
+const Card = ({Category,ProductImage,desc,rating,price,OriginalPrice,discount,imageFit}) => {
     return ( <div>
 
 
 
 
-        <div className="w-full">
-            <div className="rounded-2xl overflow-hidden">
+        <div className="w-full ">
+            <div className="rounded-2xl overflow-hidden relative">
+
+                <p className="absolute left-10 top-6 text-4xl font-bold">{Category}</p>
                 <img src={ProductImage} alt="product" className={`${imageFit}`} />
             </div>
 

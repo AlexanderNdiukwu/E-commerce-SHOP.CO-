@@ -4,6 +4,7 @@ import BrandBanner from "../HomePage/BrandBanner";
 import NewArrivals from "../HomePage/NewArrivals";
 import TopSell from "../HomePage/TopSell";
 import BrowseDesigns from "../BrowseDesigns/BrowseDesigns";
+import Reviews from "../Reviews/Reviews";
 
 
 function HomePageMain() {
@@ -28,6 +29,8 @@ function HomePageMain() {
     <TopSell />
 
     <BrowseDesigns />
+
+    <Reviews/>
 
 
 
