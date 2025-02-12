@@ -55,10 +55,12 @@ const HeaderDetails = () => {
 
 
 
-<div className=" h-full">
+<div className="  h-full">
 
-    <div className=" overflow-hidden w-full  h-full">
-        <img src="/images/MainHeadPhoto.png" alt="headMain" className="object-fit  h-full relative right-48 " />
+    <div className="relative overflow-hidden w-full  h-full">
+        <img src="/images/FooterImages/bigBing.png" alt="bigBing" className=" absolute z-30 left-96 top-3"/>
+        <img src="/images/FooterImages/smallBing.png" alt="smallBing"  className=" absolute z-30 top-96" />
+        <img src="/images/MainHeadPhoto.png" alt="headMain" className="object-fit  h-full relative right-48 bottom-4 " />
     </div>
 
 </div>

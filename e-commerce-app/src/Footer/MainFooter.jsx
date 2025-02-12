@@ -8,7 +8,7 @@ import FooterFotLast from "./FooterFotLast";
 
 const MainFooter = () => {
     return ( 
-        <div className="py-8 mx-24">
+        <div className="py-19 mx-24">
             <div className="grid grid-cols-5 justify-start gap-2 items-center border-b-1 py-5  ">
                 <Footerdets/>
                 <Footerdets2/>

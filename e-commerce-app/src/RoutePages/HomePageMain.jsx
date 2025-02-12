@@ -34,8 +34,8 @@ function HomePageMain() {
 
     <Reviews/>
     
-    <div className="bg-[#F0F0F0]">
      <MainForm/> 
+    <div className="bg-[#F0F0F0]">
     <MainFooter/>
 
     </div>
