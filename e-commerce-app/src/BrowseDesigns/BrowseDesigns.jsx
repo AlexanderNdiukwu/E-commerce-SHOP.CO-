@@ -25,29 +25,21 @@ const BrowseDesigns = () => {
                     <p>BROWSE BY DRESS STYLE</p>
                 </div>
 
-                <div className="grid grid-rows-2 mx-16 gap-4">
-                    <div className="grid grid-cols-3 gap-4">
-                 
+                <div className="grid mx-16 gap-4">
+                <div className='grid grid-cols-3 gap-4 '>
                         {fetchedData.map((item , index) =>
 
                         <div className={`${index===1?'col-span-2':''} ${index===2?'col-span-2':''}`}>
-
                             <Card 
                             key={index}
                             Category={item.Category}
                             imageFit={item.imageFit} 
-                            ProductImage={item.ProductImage}
-                            
-                            
+                            ProductImage={item.ProductImage}  
                             />
-                            </div>
-                        
-
-                              
+                            </div>   
                             )
                         }
-                    
-                    </div>
+                        </div>
                 </div>
             </div>
         </div>
