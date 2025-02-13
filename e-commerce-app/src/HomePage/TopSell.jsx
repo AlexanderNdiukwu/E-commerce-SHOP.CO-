@@ -46,7 +46,7 @@ const TopSell = () => {
                 </div>
 
                 :
-                                 <div className="text-center text-gray-500 font-bold  animate-bounce shadow-2xl">No new arrivals at the moment.</div>
+                                 <div className="text-center text-gray-500 font-bold  animate-bounce shadow-2xl">NO BEST TOP SELL YET .</div>
 
 
 
