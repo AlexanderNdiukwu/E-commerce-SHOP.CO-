@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <div className='grid lg:mx-24 py-2.5 items-center'>
       <div className='grid grid-cols-2 lg:grid-cols-4 justify-center  items-center bg text-sm'>
-        <div className='grid grid-cols-[50px_1fr] lg:grid-cols-1 items-center gap-2.5'>
+        <div className='flex mx-2 lg:mx-0 lg:grid-cols-1 items-center gap-2.5'>
           <p className=' lg:hidden grid justify-end items-center '>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-6">
               <path fillRule="evenodd" d="M3 6.75A.75.75 0 0 1 3.75 6h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 6.75ZM3 12a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75A.75.75 0 0 1 3 12Zm0 5.25a.75.75 0 0 1 .75-.75h16.5a.75.75 0 0 1 0 1.5H3.75a.75.75 0 0 1-.75-.75Z" clipRule="evenodd" />
