@@ -2,6 +2,13 @@ import Card from "../CardComponent.jsx/Card";
 import View from "../ViewButton/View";
 
 const TopSell = () => {
+    
+
+
+
+
+
+
     return ( 
         <div className="lg:mx-24">
             <div>
