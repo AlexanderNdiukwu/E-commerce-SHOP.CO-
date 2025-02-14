@@ -5,7 +5,7 @@ const Card = ({Category,ProductImage,desc,rating,price,OriginalPrice,discount,im
 
 
         <div className="w-full ">
-            <div className="rounded-2xl overflow-hidden relative">
+            <div className="rounded-2xl overflow-hidden relative ">
 
                 <p className="absolute left-10 top-6 text-4xl font-bold">{Category}</p>
                 <img src={ProductImage} alt="product" className={`${imageFit}`} />
@@ -19,10 +19,10 @@ const Card = ({Category,ProductImage,desc,rating,price,OriginalPrice,discount,im
             </div>
 
             <div className="grid justify-start w-full">
-                <img src={rating} alt="" />
+                <img src={rating} alt="" className="object-fit w-fit" />
             </div>
 
-            <div className="flex gap-2.5 ">
+            <div className="flex gap-1.5 ">
                 <div>{price}</div>
                 <div>{OriginalPrice}</div>
                 <div>{discount}</div>

@@ -17,11 +17,11 @@ const HeaderDetails = () => {
 
     return (  
 
-        <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[70vh]  lg:mx-24 overflow-hidden  ">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[70vh]   overflow-hidden  ">
 
 
 
-            <div className="grid items-center  lg:my-10">
+            <div className="grid items-center lg:mx-24 mx-3  lg:my-10">
                 <div className="pr-14 lg:pr-0 pt-7 lg:pt-0 text-4xl lg:text-6xl font-bold">
                     FIND CLOTHES THAT MATCHES YOUR STYLE
                 </div>

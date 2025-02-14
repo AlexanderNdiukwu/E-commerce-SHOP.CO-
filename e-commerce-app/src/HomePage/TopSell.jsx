@@ -16,20 +16,20 @@ const TopSell = () => {
 
 
     return ( 
-        <div className="lg:mx-24">
+        <div className="lg:mx-24 mx-3">
             <div>
-                <div className="text-5xl font-bold my-10 grid justify-center">
+                <div className=" text-3xl lg:text-5xl font-bold my-10 grid justify-center">
                     TOP SELL 
                 </div>
 
                 {fetchedData.length  > 0 ? 
 
-                <div className="grid m-3 shadow-lg lg:grid-cols-4 lg:gap-5">
+                <div className="grid m-3 shadow-lg grid-cols-4 lg:gap-5 gap-1">
 
                     {fetchedData.map((item , index )=> 
-
+                         <div key={index} className="w-auto">
                         <Card 
-                        key={index}
+                        
                         imageFit={item.imageFit}
                         ProductImage={item.ProductImage}
                         desc={item.desc}
@@ -38,6 +38,8 @@ const TopSell = () => {
                         OriginalPrice={item.OriginalPrice}
                         discount={item.discount}
                         />
+
+                        </div>
                     
 
 
@@ -46,7 +48,7 @@ const TopSell = () => {
                 </div>
 
                 :
-                                 <div className="text-center text-gray-500 font-bold  animate-bounce shadow-2xl">NO BEST TOP SELL YET .</div>
+                      <div className="text-center text-gray-500 font-bold  animate-bounce shadow-2xl">NO BEST TOP SELL YET .</div>
 
 
 
@@ -54,7 +56,7 @@ const TopSell = () => {
 
                 }
 
-                <div className="grid justify-center my-10">
+                <div className="grid lg:justify-center my-10">
                     <View/>
                 </div>
             </div>
