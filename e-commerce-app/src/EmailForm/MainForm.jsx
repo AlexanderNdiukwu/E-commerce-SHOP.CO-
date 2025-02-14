@@ -1,10 +1,10 @@
 const MainForm = () => {
-    return ( <div className=" relative top-18 mx-24 bg-black text-white rounded-2xl">
-        <div className="grid grid-cols-2 justify-between py-7 px-7">
+    return ( <div className=" relative top-18 lg:mx-24 mx-3 bg-black text-white rounded-2xl">
+        <div className="grid lg:grid-cols-2 justify-between py-7 px-7">
             <div className="text-4xl font-bold">
                 STAY UPTO DATE ABOUT OUR LATEST OFFERS 
             </div>
-            <div className="grid justify-center gap-3">
+            <div className="grid justify-center py-5 lg:py-0 gap-3">
                 <div className="bg-white rounded-4xl text-center flex items-center justify-center outline-0 border-0 text-black">
                 <input type="text"
                 placeholder="Enter your email address"

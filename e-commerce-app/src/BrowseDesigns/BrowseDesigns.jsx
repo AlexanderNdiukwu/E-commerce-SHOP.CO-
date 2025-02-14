@@ -19,10 +19,10 @@ const BrowseDesigns = () => {
 
 
     return (
-        <div className="lg:mx-24 mx-3  bg-[#F0F0F0] py-10 rounded-4xl">
+        <div className="lg:mx-24 mx-3  bg-[#F0F0F0] py-5 lg:py-10 rounded-4xl">
             <div>
-                <div className="text-5xl font-bold my-10 grid  justify-center">
-                    <p>BROWSE BY DRESS STYLE</p>
+                <div className="lg:text-5xl text-4xl lg:w-full text-center  font-bold lg:my-10 grid my-3  justify-center">
+                    <p className="w-56 ">BROWSE BY DRESS STYLE</p>
                 </div>
 
                 <div className="grid lg:mx-16 mx-8 gap-4">

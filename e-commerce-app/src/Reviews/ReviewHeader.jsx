@@ -2,9 +2,9 @@ const ReviewHeader = () => {
     return (  <div className=" my-10 ">
         <div>
 
-            <div className="grid grid-cols-2">
-                <div>
-                <p className="font-bold text-5xl">OUR HAPPY CUSTOMER </p>
+            <div className="grid grid-cols-3">
+                <div className="col-span-2">
+                <p className="font-bold text-4xl lg:text-5xl">OUR HAPPY CUSTOMER </p>
 
                 </div>
 
