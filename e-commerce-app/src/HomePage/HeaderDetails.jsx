@@ -17,7 +17,7 @@ const HeaderDetails = () => {
 
     return (  
 
-        <div className="grid lg:grid-cols-2 lg:h-[70vh]  lg:mx-24   ">
+        <div className="grid lg:grid-cols-2 grid-cols-1 lg:h-[70vh]  lg:mx-24 overflow-hidden  ">
 
 
 
@@ -58,9 +58,9 @@ const HeaderDetails = () => {
 <div className="  h-full">
 
     <div className="relative overflow-hidden w-full  h-full">
-        <img src="/images/FooterImages/bigBing.png" alt="bigBing" className="w-12 left-64 absolute z-30 lg:left-96 lg:top-3"/>
-        <img src="/images/FooterImages/smallBing.png" alt="smallBing"  className=" w-9 top-40 ml-6  absolute z-30 lg:top-96" />
-        <img src="/images/MainHeadPhoto.png" alt="headMain" className="lg:object-fit object-fill h-54 lg:h-full relative right-20 lg:right-48 lg:bottom-4 " />
+        <img src="/images/FooterImages/bigBing.png" alt="bigBing" className="w-12 right-0 absolute z-30 lg:top-3"/>
+        <img src="/images/FooterImages/smallBing.png" alt="smallBing"  className=" w-9  ml-6 bottom-28 absolute z-30 lg:bottom-0" />
+         <img src="/images/MainHeadPhoto.png" alt="headMain" className=" grid overflow-hidden relative h-96 lg:h-full lg:right-17 scale-248 lg:scale-100 object-contain object-right right-58 top-2 lg:object-cover   lg:object-right"/>
     </div>
 
 </div>
