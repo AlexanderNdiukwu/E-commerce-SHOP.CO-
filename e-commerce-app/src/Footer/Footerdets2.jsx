@@ -1,9 +1,9 @@
 const Footerdets2 = () => {
     return ( <div>
         <div>
-            <div>
+            <div className="text-sm">
                 <div>
-                <p>COMPANY</p>
+                <p className="font-medium ">COMPANY</p>
 
                 </div>
                 <p>About</p>

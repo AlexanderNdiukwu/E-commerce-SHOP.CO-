@@ -1,5 +1,5 @@
 const Footerdets = () => {
-    return ( <div>
+    return ( <div className="py-3 lg:py-0 ">
 
         <div>
         <p className='text-[32px] font-bold whitespace-nowrap text-center  grid justify-start'>SHOP.CO</p>
@@ -7,7 +7,7 @@ const Footerdets = () => {
 
         </div>
 
-        <div>
+        <div className=" text-sm">
             <p>We have clothes that suits that styles and which you're proud to wear .from men to women</p>
         </div>
 
