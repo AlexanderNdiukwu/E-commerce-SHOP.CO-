@@ -1,7 +1,7 @@
 const ProductAdd = () => {
     return ( <div>
 
-    <div className="flex bg-[#F0F0F0]">
+    <div className="flex gap-2.5 bg-[#F0F0F0] items-center justify-center rounded-4xl py-4 px-13">
 
 
         <div>
@@ -16,6 +16,8 @@ const ProductAdd = () => {
 
 
     <div>
+
+
         <p>0</p>
 
 

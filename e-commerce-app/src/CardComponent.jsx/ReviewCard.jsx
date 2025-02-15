@@ -1,4 +1,4 @@
-const ReviewCard = ({ rating, name, comment }) => {
+const ReviewCard = ({ rating, name, comment,posted }) => {
     return (
         <div className="shadow-lg rounded-3xl h-64 lg:w-80 p-4">
             <div className="grid items-center px-7 py-6 gap-2 h-full">
@@ -15,6 +15,20 @@ const ReviewCard = ({ rating, name, comment }) => {
                         {comment}
                     </div>
                 </div>
+
+                <div>
+                    <div>
+                        <p>{posted}</p>
+                    </div>
+                </div>
+
+
+
+
+
+
+
+
             </div>
         </div>
     );

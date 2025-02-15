@@ -1,10 +1,10 @@
 import ProductCard from "../CardComponent.jsx/ProductCard";
-import ProductAdd from "./ProductAdd";
+import ProductQuatity from "./ProductQuatity";
 import ProductSize from "./ProductSize";
 import SelectColor from "./SelectColor";
 
 const ProductSelect = () => {
-    return ( <div>
+    return ( <div className="grid items-center  h-full">
 
 
         <div className="border-b-2 border-[#F0F0F0]">
@@ -19,7 +19,8 @@ const ProductSelect = () => {
 
         </div>
         <div>
-            <ProductAdd/>
+            <ProductQuatity/>
+        
         </div>
 
  

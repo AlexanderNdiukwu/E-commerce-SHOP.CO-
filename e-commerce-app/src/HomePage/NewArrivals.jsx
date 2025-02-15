@@ -1,5 +1,5 @@
 import Card from "../CardComponent.jsx/Card";
-import View from "../ViewButton/View";
+import View from "../ButtonComponent/View";
 
 const NewArrivals = () => {
     let fetchedData = [
