@@ -1,7 +1,7 @@
 import MainForm from "../EmailForm/MainForm";
 import MainFooter from "../Footer/MainFooter";
+import ProductCustomerCare from "../ProductDetailPage/ProductCustomerCare";
 import ProductHeader from "../ProductDetailPage/ProductHeader";
-import ProductReview from "../ProductDetailPage/ProductReview";
 import ProductSelect from "../ProductDetailPage/ProductSelect";
 
 
@@ -32,10 +32,8 @@ const ProductDetailMain = () => {
 </div>
 
 <div>
-    <ProductReview/>
+    <ProductCustomerCare/>
 </div>
-
-
 
 
 
