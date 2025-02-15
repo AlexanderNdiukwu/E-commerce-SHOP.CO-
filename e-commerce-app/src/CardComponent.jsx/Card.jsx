@@ -25,7 +25,8 @@ const Card = ({Category,ProductImage,desc,rating,price,OriginalPrice,discount,im
             <div className="flex gap-1.5 ">
                 <div>{price}</div>
                 <div>{OriginalPrice}</div>
-                <div>{discount}</div>
+                <div className="bg-[#FF33331A] text-[#FF3333] border-0 text-center text-sm py-0.5 px-2 rounded-2xl ">{discount}</div>
+
             </div>
             </div>
         </div>

@@ -8,6 +8,12 @@ import ProductSelect from "../ProductDetailPage/ProductSelect";
 
 
 const ProductDetailMain = () => {
+
+
+
+
+
+    
     return ( <div>
 
 

@@ -4,7 +4,7 @@ const ProductCard = ({title,rating,price,OriginalPrice,discount,desc}) => {
 
 
         
-<div className="w-full border-b ">
+<div className="w-full  grid gap-3 ">
         
           
             <div>
@@ -16,13 +16,13 @@ const ProductCard = ({title,rating,price,OriginalPrice,discount,desc}) => {
                 <img src={rating} alt="" className="object-fit w-fit" />
             </div>
 
-            <div className="flex gap-1.5 ">
-                <div>{price}</div>
-                <div>{OriginalPrice}</div>
-                <div>{discount}</div>
+            <div className="flex gap-2 items-center content-center  ">
+                <div className="font-bold text-3xl">{price}</div>
+                <div  className="font-bold text-3xl text-[#00000099] line-through">{OriginalPrice}</div>
+                <div className="bg-[#FF33331A] text-[#FF3333] border-0 text-center text-sm py-0.5 px-2 rounded-2xl ">{discount}</div>
             </div>
-            <div className="grid justify-start w-full overflow-hidden">
-                <p>{desc} </p>
+            <div className="grid justify-start w-full overflow-hidden pb-6">
+                <p className="text-sm text-[#00000099]">{desc} </p>
             </div>
           
         </div>
