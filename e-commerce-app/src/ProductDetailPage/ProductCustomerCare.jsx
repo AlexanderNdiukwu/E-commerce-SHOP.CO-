@@ -3,7 +3,7 @@ import ProductreviewHead from "./ProductReviewHead";
 
 
 const ProductCustomerCare = () => {
-    return ( <div>
+    return ( <div className="lg:mx-24">
         <div>
         <div>
             <ProductreviewHead/>
