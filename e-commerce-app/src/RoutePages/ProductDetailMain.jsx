@@ -47,6 +47,8 @@ const ProductDetailMain = () => {
 
 
 
+
+
     <MainForm/> 
     <div className="bg-[#F0F0F0]">
     <MainFooter/>

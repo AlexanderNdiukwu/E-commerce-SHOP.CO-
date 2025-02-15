@@ -3,7 +3,7 @@ const ProductReviewNav = () => {
         <div className="grid grid-cols-2 py-4 ">
             <div className="flex items-center ">
                 <p className="font-bold text-2xl">All Reviews</p>
-                <p className="text-[#00000099]">(24)</p>
+                <p className="text-[#00000099]">(6)</p>
             </div>
             <div className="flex justify-end gap-3 ">
 

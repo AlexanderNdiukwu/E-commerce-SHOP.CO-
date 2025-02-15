@@ -21,12 +21,10 @@ const Card = ({Category,ProductImage,desc,rating,price,OriginalPrice,discount,im
             <div className="grid justify-start w-full">
                 <img src={rating} alt="" className="object-fit w-fit" />
             </div>
-
-            <div className="flex gap-1.5 ">
-                <div>{price}</div>
-                <div>{OriginalPrice}</div>
-                <div className="bg-[#FF33331A] text-[#FF3333] border-0 text-center text-sm py-0.5 px-2 rounded-2xl ">{discount}</div>
-
+            <div className="flex gap-2 items-center content-center  ">
+                <div className="font-bold text-xl">{price}</div>
+                <div  className="font-bold text-xl text-[#00000099] line-through">{OriginalPrice}</div>
+                <div className="bg-[#FF33331A] text-[#FF3333] border-0 text-center items-center  text-sm px-2 rounded-xl ">{discount}</div>
             </div>
             </div>
         </div>

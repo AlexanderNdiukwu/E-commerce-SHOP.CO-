@@ -19,7 +19,7 @@ const ProductCard = ({title,rating,price,OriginalPrice,discount,desc}) => {
             <div className="flex gap-2 items-center content-center  ">
                 <div className="font-bold text-3xl">{price}</div>
                 <div  className="font-bold text-3xl text-[#00000099] line-through">{OriginalPrice}</div>
-                <div className="bg-[#FF33331A] text-[#FF3333] border-0 text-center text-sm py-0.5 px-2 rounded-2xl ">{discount}</div>
+                <div className="bg-[#FF33331A] text-[#FF3333] border-0 text-center text-sm  px-2 rounded-2xl ">{discount}</div>
             </div>
             <div className="grid justify-start w-full overflow-hidden pb-6">
                 <p className="text-sm text-[#00000099]">{desc} </p>

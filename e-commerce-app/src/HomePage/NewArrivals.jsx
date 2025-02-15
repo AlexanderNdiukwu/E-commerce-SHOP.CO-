@@ -39,7 +39,7 @@ const NewArrivals = () => {
                 )}
 
                 <div className="grid lg:justify-center my-10">
-                    <View />
+                    <View view='View All' />
                 </div>
             </div>
         </div>
