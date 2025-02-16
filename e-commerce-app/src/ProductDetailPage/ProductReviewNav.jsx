@@ -5,7 +5,7 @@ const ProductReviewNav = () => {
                 <p className="font-bold text-2xl">All Reviews</p>
                 <p className="text-[#00000099]">(6)</p>
             </div>
-            <div className="flex justify-end gap-3 ">
+            <div className="flex justify-end lg:gap-3 ">
 
                 <div className="bg-[#F0F0F0] py-1 px-3 rounded-3xl" >
                     <p>
@@ -16,12 +16,12 @@ const ProductReviewNav = () => {
                     </p>
                 </div>
 
-                <div className="bg-[#F0F0F0] py-1 px-3 rounded-3xl">
+                <div className="bg-[#F0F0F0] py-1 px-3 rounded-3xl hidden lg:block">
                     <p>Latest</p>
                 </div>
 
                 <div className="bg-black text-white rounded-3xl  py-1 px-3">
-                    <p>Write A Review </p>
+                    <p className="whitespace-nowrap">Write A Review </p>
                 </div>
 
             </div>

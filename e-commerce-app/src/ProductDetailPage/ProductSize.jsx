@@ -8,7 +8,7 @@ const ProductSize = () => {
              
             </div>
 
-            <div className="flex gap-5">
+            <div className="flex gap-5 ">
                 <div className="bg-[#F0F0F0] rounded-3xl py-0.5 px-3">
                  <p>Small</p>
                 </div>

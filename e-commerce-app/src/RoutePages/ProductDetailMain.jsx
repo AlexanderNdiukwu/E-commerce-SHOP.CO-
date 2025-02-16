@@ -21,7 +21,7 @@ const ProductDetailMain = () => {
 
 
 
-  <div className="lg:flex gap-6 lg:mx-24 lg:py-10 border-t-2 border-[#F0F0F0]">
+  <div className="lg:flex gap-6 mx-3 lg:mx-24 lg:py-10 border-t-2 border-[#F0F0F0]">
                 <div >
                     <ProductHeader/>
               

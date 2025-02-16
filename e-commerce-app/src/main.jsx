@@ -2,6 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import HomePageMain from './RoutePages/HomePageMain.jsx'
 import ProductDetailMain from './RoutePages/ProductDetailMain.jsx'
+import CategoryMain from './RoutePages/CategoryMain.jsx'
+import CartMain from './RoutePages/CartPageMain.jsx'
 import App from './App.jsx'
 import './index.css'
 import ErrorPage from './Error.jsx'
@@ -19,6 +21,14 @@ const router = createBrowserRouter([
       {
         path: "/ProductDetails",
         element: <ProductDetailMain />,
+      },
+      {
+        path: "/Category",
+        element: <CategoryMain/>,
+      },
+      {
+        path: "/Cart",
+        element: <CartMain/>,
       },
 
     ]

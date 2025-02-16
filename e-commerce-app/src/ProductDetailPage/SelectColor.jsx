@@ -1,4 +1,4 @@
-const SelectColor = () => {
+const SelectColor = () => { 
     return ( <div>
 
 

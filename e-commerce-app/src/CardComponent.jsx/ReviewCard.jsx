@@ -1,6 +1,6 @@
 const ReviewCard = ({ rating, name, comment,posted }) => {
     return (
-        <div className="shadow-lg rounded-3xl h-64 lg:w-full p-4">
+        <div className="shadow-lg rounded-3xl h-full lg:w-full p-4">
             <div className="grid items-center px-7 py-6 gap-2 h-full">
                 <div className="grid justify-start w-full">
                     <img src={rating} alt="rating" />
@@ -17,7 +17,7 @@ const ReviewCard = ({ rating, name, comment,posted }) => {
                 </div>
 
                 <div>
-                    <div>
+                    <div className="py-3">
                         <p>{posted}</p>
                     </div>
                 </div>

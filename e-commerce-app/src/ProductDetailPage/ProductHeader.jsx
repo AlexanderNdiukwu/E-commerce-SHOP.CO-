@@ -1,15 +1,15 @@
 const ProductHeader = () => {
     return (
         <div className="flex flex-col-reverse lg:flex-row lg:gap-3">
-            <div className=" flex flex-col lg:flex-none gap-2 justify-center lg:order-1">
+            <div className="flex flex-row lg:flex-col gap-6  lg:my-0 my-2 lg:order-1">
                 <div className="rounded-2xl overflow-hidden">
-                    <img src="/images/FooterImages/Bclothe.png" alt="clothe" className="w-40" />
-                </div>
-                <div className="lg:py-2 rounded-2xl overflow-hidden">
-                    <img src="/images/FooterImages/Bclothe.png" alt="clothe" className="w-40" />
+                    <img src="/images/FooterImages/Bclothe.png" alt="clothe" className="w-45 lg:w-40 " />
                 </div>
                 <div className="rounded-2xl overflow-hidden">
-                    <img src="/images/FooterImages/Bclothe.png" alt="clothe" className="w-40" />
+                    <img src="/images/FooterImages/Bclothe.png" alt="clothe" className="w-45 lg:w-40"  />
+                </div>
+                <div className="rounded-2xl overflow-hidden">
+                    <img src="/images/FooterImages/Bclothe.png" alt="clothe" className="w-45 lg:w-40" />
                 </div>
             </div>
 

@@ -7,8 +7,8 @@ const ProductCard = ({title,rating,price,OriginalPrice,discount,desc}) => {
 <div className="w-full  grid gap-3 ">
         
           
-            <div>
-                <p className="font-bold text-4xl">{title}</p>
+            <div className=" overflow-hidden ">
+                <p className="font-bold lg:text-4xl text-2xl truncate ">{title}</p>
             </div>
 
 
