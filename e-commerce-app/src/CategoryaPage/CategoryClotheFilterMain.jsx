@@ -14,9 +14,13 @@ const CategoryClotheFilterMain = ({ toggleFilter }) => {
     ];
 
     return (
-        <div className=" border h-full">
+        <div className=" h-full">
             <div className="flex justify-between">
                 <p className="text-3xl font-bold">Casual</p>
+                <p className="hidden lg:block">
+                    this the number of the filter pages 
+                </p>
+
                 <div className="bg-[#F0F0F0] py-1 px-3 rounded-3xl grid lg:hidden">
                     <button onClick={toggleFilter}>
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
