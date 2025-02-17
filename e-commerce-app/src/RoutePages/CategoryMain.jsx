@@ -21,20 +21,25 @@ const CategoryMain = () => {
     return ( <div>
 
          <div className=" relative flex  flex-col-reverse lg:flex-row gap-5 border-t-2 border-[#0000001A] lg:mx-24 lg:py-5">
-            <div  className={`order-1  z-50 h-full   transition-transform duration-900 ease-in-out  lg:relative ${isFilterOpen ? 'absolute bg-white inset- z-50  translate-y-0' : 'translate-y-full'}`}>
+            <div  className={` order-1 h-full transition-transform duration-700 ease-in-out absolute  lg:relative ${isFilterOpen ? ' bg-white inset- z-50  ' : 'hidden lg:block'}`}>
 
         
                <CategoryMainFilter toggleFilter={toggleFilter} />
 
               
             </div>
-            <div className='order-2 hidden'>
+            <div className='order-2 '>
                 <CategoryClotheFilterMain  toggleFilter={toggleFilter}/>
             </div>
 
-
-
-
+{/*          
+{isFilterOpen && (
+    <div
+      className="fixed inset-0 bg-white bg-opacity-30 backdrop-blur-md z-40"
+      onClick={toggleFilter}
+    ></div>
+  )}
+    */}
 
 
 
