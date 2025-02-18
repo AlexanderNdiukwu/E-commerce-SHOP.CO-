@@ -2,8 +2,35 @@ import MainForm from "../EmailForm/MainForm";
 import MainFooter from "../Footer/MainFooter";
 
 const CartMain = () => {
-    return (<div>'
-        this is the cart
+    return (<div>
+
+        <div>
+            <div>
+                <p>YOUR CART</p>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+       
 
 
 
