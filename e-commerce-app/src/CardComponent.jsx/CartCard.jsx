@@ -2,6 +2,9 @@ const CartCard = () => {
     return ( <div>
 
         <div>
+            <div>
+                
+            </div>
 
             
 
