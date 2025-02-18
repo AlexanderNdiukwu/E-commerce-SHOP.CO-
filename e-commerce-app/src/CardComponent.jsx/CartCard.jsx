@@ -4,7 +4,7 @@ const CartCard = () => {
     return ( <div>
 
         <div className="h-full ">
-            <div className="grid grid-cols-3 gap-4 mx-10 py-8  border-b-2 border-[#f0f0f0]">
+            <div className="grid grid-cols-3 lg:gap-4 lg:mx-10 py-7  border-b-2 border-[#f0f0f0]">
 
 
             <div>
@@ -55,7 +55,7 @@ const CartCard = () => {
                </p>
                 </div>
 
-                <div className="grid justify-end">
+                <div className="grid justify-end w-fit">
 
                     <ProductAdd/>
 
