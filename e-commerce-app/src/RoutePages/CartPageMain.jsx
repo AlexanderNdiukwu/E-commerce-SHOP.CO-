@@ -1,3 +1,4 @@
+import CartCard from "../CardComponent.jsx/CartCard";
 import MainForm from "../EmailForm/MainForm";
 import MainFooter from "../Footer/MainFooter";
 
@@ -7,6 +8,11 @@ const CartMain = () => {
         <div>
             <div>
                 <p>YOUR CART</p>
+            </div>
+
+            <div>
+
+                <CartCard/>
             </div>
 
 
