@@ -1,4 +1,4 @@
-const ProductHeader = ({}) => {
+const ProductHeader = ({ProductMore}) => {
 
 
 
