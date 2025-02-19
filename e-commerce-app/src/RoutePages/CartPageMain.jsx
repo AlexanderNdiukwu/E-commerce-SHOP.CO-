@@ -26,9 +26,9 @@ const CartMain = () => {
 
 
 
-    return (<div className=" lg:mx-24 mx-3  border-[#f0f0f0] border-t-2">
+    return (<div className="   border-[#f0f0f0] border-t-2">
 
-        <div className=" my-5  ">
+        <div className=" lg:mx-24 mx-3 my-5  ">
             <div className="font-bold lg:text-4xl text-3xl my-3">
                 <p>YOUR CART</p>
             </div>

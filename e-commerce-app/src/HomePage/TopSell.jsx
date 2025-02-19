@@ -57,7 +57,7 @@ const TopSell = () => {
                 }
 
                 <div className="grid lg:justify-center my-10">
-                    <View view='View All'/>
+                    < View view='View All'/>
                 </div>
             </div>
         </div>
