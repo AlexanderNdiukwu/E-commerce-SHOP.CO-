@@ -1,15 +1,15 @@
 import ProductAdd from "../ProductDetailPage/ProductAdd";
 
-const CartCard = () => {
+const CartCard = ({CartImage,CartTitle,Size,Color,ProductPrice}) => {
     return ( <div>
 
-        <div className="h-full ">
-            <div className="grid grid-cols-3 lg:gap-4 lg:mx-10 py-7  border-b-2 border-[#f0f0f0]">
+        <div className=" ">
+            <div className="grid grid-cols-3 lg:gap-4 lg:mx-10 mx-4 py-7  border-b-2 border-[#f0f0f0]">
 
 
             <div>
                 <div >
-                <img src='/images/CardImages/image.png' alt="image" className="rounded-2xl" />
+                <img src={CartImage} alt="image" className="rounded-2xl w-full" />
 
                 </div>
                 
@@ -20,28 +20,28 @@ const CartCard = () => {
             
             <div className="grid items-evenly py-2.5">
                 <div className="grid gap-1"  >
-                    <div className="font-bold text-2xl w-full overflow-hidden">
-                    <p>T-shirt </p>
+                    <div className="font-bold text-xl lg:text-2xl w-full overflow-hidden">
+                    <p>{CartTitle}</p>
 
                     </div>
 
 
-                <div className="grid gap-0.5 text-sm">
+                <div className="grid gap-0.5 font-normal">
                 <div className="flex gap-1.5">
-                    <p>Size:</p>
-                    <p>Large</p>
+                    <p >Size:</p>
+                    <p className="text-[#00000099]">{Size}</p>
                 </div>
                 <div className="flex gap-1.5">
                     <p>Color:</p>
-                    <p>White</p>
+                    <p className="text-[#00000099]">{Color}</p>
                 </div>
 
                 </div>
 
                 </div>
 
-                <div className="font-bold text-2xl flex items-end">
-                    <p>$154</p>
+                <div className="font-bold lg:text-2xl text-xl  flex items-end">
+                    <p>{ProductPrice}</p>
                 </div>
             </div>
             <div className="grid  content-between">
@@ -55,7 +55,7 @@ const CartCard = () => {
                </p>
                 </div>
 
-                <div className="grid justify-end w-fit">
+                <div className=" ">
 
                     <ProductAdd/>
 

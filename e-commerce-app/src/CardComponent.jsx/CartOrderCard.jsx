@@ -1,11 +1,11 @@
-const CardOrderCard = () => {
+const CardOrderCard = ({Subtotal,DiscountCount,Discount,DeliveryFee,Total}) => {
     return ( <div className="">
 
         <div className="text-xl grid gap-6 py-6 border-b-2 border-[#0000001A]">
 
             <div className="flex justify-between">
                 <p className="text-[#00000099]">Subtotal</p>
-                <p>$564</p>
+                <p>{Subtotal}</p>
             </div>
 
 
@@ -13,12 +13,12 @@ const CardOrderCard = () => {
 
                 <div  className="flex text-[#00000099]">
                 <p>Discount</p>
-                <p>(-20%)</p>
+                <p>{DiscountCount}</p>
 
                 </div>
 
                 <div>
-                    <p>-133</p>
+                    <p>{Discount}</p>
                 </div>
 
             </div>
@@ -26,7 +26,7 @@ const CardOrderCard = () => {
 
             <div  className="flex justify-between">
                 <p  className="text-[#00000099]">Delivery Fee</p>
-                <p>$15</p>
+                <p>{DeliveryFee}</p>
             </div>
 
 
@@ -37,7 +37,7 @@ const CardOrderCard = () => {
         <div>
             <div  className="flex justify-between">
                 <p className="text-xl font-normal" >Total</p>
-                <p className="text-2xl font-bold">$1000</p>
+                <p className="text-2xl font-bold">{Total}</p>
 
             </div>
         </div>
@@ -53,12 +53,12 @@ const CardOrderCard = () => {
                 </div>
                 <div className="">
             <input type="text" placeholder="Add Promo Code "
-            className="text-[#00000066] w-full px-18 py-3 outline-0 border-0 rounded-3xl bg-[#f0f0f0]" />
+            className="text-[#00000066] lg:w-72   pl-11 py-3 outline-0 border-0 rounded-3xl bg-[#f0f0f0]" />
 
                 </div>
 
             </div>
-            <p className="bg-black text-center rounded-3xl text-white py-3 w-30">Apply</p>
+            <p className="bg-black text-center rounded-3xl text-white py-3 w-full">Apply</p>
         </div>
 
         <div className="flex gap-2 bg-black rounded-3xl text-white justify-center py-3 ">

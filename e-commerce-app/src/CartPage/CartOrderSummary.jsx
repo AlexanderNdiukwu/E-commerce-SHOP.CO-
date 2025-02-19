@@ -1,6 +1,6 @@
 import CardOrderCard from "../CardComponent.jsx/CartOrderCard";
 
-const CartOrderSumnmary = () => {
+const CartOrderSumnmary = ({Subtotal,DiscountCount,Discount,DeliveryFee,Total}) => {
     return ( <div className="border-2 border-[#f0f0f0] rounded-3xl">
 
         <div className="py-5 px-4">
@@ -11,7 +11,7 @@ const CartOrderSumnmary = () => {
         </div>
 
         <div>
-            <CardOrderCard/>
+            <CardOrderCard  Subtotal={Subtotal} DiscountCount={DiscountCount} Discount={Discount} DeliveryFee={DeliveryFee} Total={Total}/>
         </div>
 
         </div>

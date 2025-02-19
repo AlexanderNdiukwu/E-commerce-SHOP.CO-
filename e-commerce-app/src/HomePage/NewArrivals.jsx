@@ -17,7 +17,8 @@ const NewArrivals = () => {
                     NEW ARRIVALS
                 </div>
 
-                {fetchedData.length > 0 ? (
+                {fetchedData.length > 0 ?
+                 (
                     <div className="grid m-3 shadow-lg grid-cols-4 lg:gap-5 gap-1  ">
                         {fetchedData.map((item, index) => (
                              <div  key={index} className="w-auto">
