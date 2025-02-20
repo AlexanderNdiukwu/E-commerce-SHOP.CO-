@@ -28,7 +28,7 @@ const ProductSelect = ({ProductDetail}) => {
         </div>
       
         <div>
-            <SelectColor />
+            <SelectColor  />
         </div>
 
         <div>

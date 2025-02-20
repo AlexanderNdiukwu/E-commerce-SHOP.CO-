@@ -1,4 +1,34 @@
+import { useState } from "react"
+
 const ProductSize = () => {
+
+    let [Size , SetSize ] =useState()
+    let SizeData =[
+        {Size:'small'},
+        {Size:'medium'},
+        {Size:'large' },
+        {Size:'Xlarge'},
+    ]
+
+
+
+    let funk=(index) => {
+        console.log(index)
+        SetSize(index)
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
     return ( <div>
 
 
@@ -9,18 +39,13 @@ const ProductSize = () => {
             </div>
 
             <div className="flex gap-5 ">
-                <div className="bg-[#F0F0F0] rounded-3xl py-0.5 px-3">
-                 <p>Small</p>
+                
+                {SizeData.map((item,index)=>(
+                <div key={index} onClick={()=>funk(index)} className={`${index  === Size ?'bg-black' : 'bg-[#F0F0F0]' } rounded-3xl py-0.5 px-6} `  } >
+                 <p>{item.Size}</p>
                 </div>
-                <div className="bg-[#F0F0F0] rounded-3xl py-0.5 px-3">
-                <p>Medium</p>
-                </div>
-                <div className="bg-[#F0F0F0] rounded-3xl py-0.5 px-3">
-                 <p>Large</p>
-                </div>
-                <div className="bg-[#F0F0F0] rounded-3xl py-0.5 px-3">
-                    <p>X-Large</p>
-                </div>
+                ))}
+
 
             </div>
         </div>

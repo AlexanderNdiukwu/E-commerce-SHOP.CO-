@@ -11,11 +11,9 @@ const SelectColor = () => {
         {color:'#FFC0CB'}
     ]
 
-    let funk=(x,index) =>{
+    let funk=(x,index) => {
         console.log(x,index)
         SetColor(x)
-        
-        
 
     }
 
@@ -35,19 +33,12 @@ const SelectColor = () => {
             <div className="flex gap-5">
                 {SelectedColor.map((item,index)=>(
                   
-                    <div onClick={()=>funk(item.color,index)} key={index}  className={` grid items-center  rounded-4xl w-9 h-9 text-center `}  style={{ backgroundColor: item.color }}>
-                        
-                        {Color === item.color && <span className="text-white">✓</span>}
-
+                    <div onClick={()=>funk(item.color,index)} key={index}  className={`border grid items-center  rounded-4xl w-9 h-9 text-center cursor-pointer `}  style={{ backgroundColor: item.color }}>    
+                        {Color === item.color && <span className="text-white">✓</span>   }
                     </div>
                 ))}
-              
-
             </div>
-        </div>
-
-
-        
+        </div>       
     </div> );
 }
  
