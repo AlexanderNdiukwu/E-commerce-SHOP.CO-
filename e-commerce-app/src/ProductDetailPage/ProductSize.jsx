@@ -4,7 +4,7 @@ const ProductSize = () => {
 
         <div className="py-5 grid gap-3 border-b-2 border-[#F0F0F0]">
             <div>
-                <p>Select Colors</p>
+                <p>Select Size</p>
              
             </div>
 

@@ -1,4 +1,27 @@
+import { useState } from "react";
+
 const SelectColor = () => { 
+
+    let [Color,SetColor] = useState('')
+
+    let SelectedColor =[
+        {color:"amber"},
+        {color:"green"},
+        {color:'red'},
+        {color:'pink'}
+    ]
+
+    let funk=(x,index) =>{
+        console.log(x,index)
+        
+
+    }
+
+
+
+
+
+    
     return ( <div>
 
 
@@ -8,15 +31,14 @@ const SelectColor = () => {
             </div>
 
             <div className="flex gap-5">
-                <div className="bg-[#4F4631] rounded-4xl w-9 h-9">
+                {SelectedColor.map((item,index)=>(
+                    <div onClick={()=>funk(item.color,index)} key={index} className={` rounded-4xl w-9 h-9 text-center bg-${item.color}-200`}>
+                        
+                       
+
+                    </div>
+                ))}
               
-                </div>
-                <div className="bg-[#4F4631] rounded-4xl w-9 h-9">
-              
-                </div>
-                <div className="bg-[#4F4631] rounded-4xl w-9 h-9">
-              
-                </div>
 
             </div>
         </div>
