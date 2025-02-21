@@ -1,30 +1,13 @@
-import { motion , useScroll, useTransform  } from "framer-motion";
-import { useRef } from "react";
+import { motion } from "framer-motion";
+
 const ReviewHeader = () => {
-    const ref = useRef(null);
-    const { scrollYProgress } = useScroll({ target: ref, offset: ["start end", "end start"] });
-  
-    // Move left as you scroll down
-    const x = useTransform(scrollYProgress, [0, 1], [0, -300]); 
-  
     return (  <div className=" my-10 ">
         <div>
 
             <div className="grid grid-cols-3">
                 <div className="col-span-2">
                 <p className="font-bold text-4xl lg:text-5xl">OUR HAPPY CUSTOMER </p>
-
-                <div ref={ref} className="h-[200vh] flex items-center justify-center bg-gray-100">
-      <motion.div
-        style={{ x }}
-        className="w-32 h-32 bg-blue-500 text-white flex items-center justify-center rounded-lg"
-      >
-        Move Left
-      </motion.div>
-    </div>
                 </div>
-
-                
 
 
 
