@@ -9,7 +9,8 @@ const Reviews = () => {
         {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
         {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
         {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
-        // {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
+        {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
+        {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
         
     ]
 
@@ -24,7 +25,7 @@ const Reviews = () => {
         <ReviewHeader/>
         {reviewData.length > 0 ? 
 
-            <div className="grid lg:grid-cols-4  gap-2">
+            <div className="grid lg:grid-cols-4 grid-flow-col w-full overflow-hidden border  gap-2">
 
             {reviewData.map((item,index) => 
 

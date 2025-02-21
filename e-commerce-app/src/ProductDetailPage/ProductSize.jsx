@@ -18,17 +18,6 @@ const ProductSize = () => {
 
     }
 
-
-
-
-
-
-
-
-
-
-
-
     return ( <div>
 
 

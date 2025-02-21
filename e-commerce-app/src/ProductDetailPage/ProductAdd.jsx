@@ -13,7 +13,7 @@ const ProductAdd = () => {
     }
     
     let Subtract = () =>{
-        if ( Quatity >= 1 ){
+        if ( Quatity > 0 ){
 
             SetQuality(c=>c-1)
 

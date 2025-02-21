@@ -1,5 +1,20 @@
 const ProductCard = ({title,rating,price,OriginalPrice,discount,desc}) => {
+
+
+
+
+    
+
+
+
+
+
+
     return ( <div>
+
+
+
+
 
 
 
