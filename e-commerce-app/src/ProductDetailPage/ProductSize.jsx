@@ -12,8 +12,8 @@ const ProductSize = () => {
 
 
 
-    let funk=(index) => {
-        console.log(index)
+    let funk=(x,index) => {
+        console.log(x,index)
         SetSize(index)
 
     }
@@ -41,8 +41,8 @@ const ProductSize = () => {
             <div className="flex gap-5 ">
                 
                 {SizeData.map((item,index)=>(
-                <div key={index} onClick={()=>funk(index)} className={`${index  === Size ?'bg-black' : 'bg-[#F0F0F0]' } rounded-3xl py-0.5 px-6} `  } >
-                 <p>{item.Size}</p>
+                <div key={index} onClick={()=>funk(item.Size,index)} className={`${index  === Size ?'bg-[#767686]' : 'bg-[#F0F0F0]' } rounded-3xl border py-0.5 x-10} `  } >
+                 <p className="px-4" >{item.Size}</p>
                 </div>
                 ))}
 

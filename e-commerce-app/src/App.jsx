@@ -14,7 +14,7 @@ function App() {
  
 
   return (
-<div>
+<div className="select-none">
   <AdvertPage/>
    <Navbar/>
    
