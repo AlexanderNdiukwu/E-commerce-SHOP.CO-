@@ -25,7 +25,7 @@ const Reviews = () => {
         <ReviewHeader/>
         {reviewData.length > 0 ? 
 
-            <div className="grid lg:grid-cols-4  w-full overflow-hidden border  gap-2">
+            <div className="grid lg:flex  w-full overflow-hidden border gap-2 lg:gap-4">
 
             {reviewData.map((item,index) => 
 
