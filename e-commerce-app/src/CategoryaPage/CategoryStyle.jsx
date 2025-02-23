@@ -31,7 +31,7 @@ let click = (x)=>{
             <div className="py-4">
                 <p className="text-xl font-bold">Dress Style</p>
             </div>
-            <div className="text-base  text-[#00000099] h-full grid gap-5">
+            <div className="text-base   text-[#00000099] h-full grid gap-5">
            {styleData.map((item,index)=>(
             <div key={index} onClick={()=>click(item.style)} className={`hover:bg-[#f0f0f0] ${item.style === clicked ? 'bg-black text-white rounded-3xl px-2 font-bold py-1': ''}`} >
                 {item.style}
