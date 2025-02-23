@@ -1,8 +1,9 @@
-
+import { useRef } from "react";
 import ReviewCard from "../CardComponent.jsx/ReviewCard";
 import ReviewHeader from "./ReviewHeader";
 
 const Reviews = () => {
+    const scrollRef = useRef(null);
 
     let reviewData = [
 
@@ -11,9 +12,22 @@ const Reviews = () => {
         {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
         {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
         {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
+        {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
+        {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
+        {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
+        {rating:'/images/CardImages/starRate.png', name:'sarahsmd,kskksksckididih', comment:'loremmmmmmmmkefnkesnfksnedvnsdfjsenfjsebfuies fifweifiwef fjwefiuhweifhweifhwef fwjiefbwufwfniuwe wejijdawidwhidhwhd dbwdjwdw dwuidwudhw duwdwuduw w dfw idhw d wd w d w dfw fwefbuwbiufbwuimmm'},
         
     ]
-
+    const scrollLeft = () => {
+        scrollRef.current.scrollBy({ left: -300, behavior: "smooth" });
+        console.log('it is working ')
+      };
+      
+      const scrollRight = () => {
+        console.log ('it is working')
+        scrollRef.current.scrollBy({ left: 300, behavior: "smooth" });
+      };
+      
 
 
 
@@ -22,27 +36,29 @@ const Reviews = () => {
     return ( <div className="lg:mx-24 mx-3 py-4">
 
 
-        <ReviewHeader/>
+        <ReviewHeader scrollLeft={scrollLeft} scrollRight={scrollRight}/>
+
+        <div ref={scrollRef} className= " relative w-full   ">
+
+
         {reviewData.length > 0 ? 
 
-            <div className="grid lg:flex  w-full overflow-hidden border gap-2 lg:gap-4">
-
+            <div className="ref={scrollRef} flex overflow-x-scroll scroll-smooth  gap-2 lg:gap-4">
+                
             {reviewData.map((item,index) => 
+            <div  key={index} className="lg:min-w-1/4 min-w-full p-4">
+
 
                     <ReviewCard
-                    key={index}
+                   
                     rating={item.rating}
                     name={item.name}
                     comment={item.comment}
-
-
+                    
+                    
                     />
-
-
-
-
-)}
-
+            </div>
+                )}
         </div>
 :
 
@@ -51,6 +67,7 @@ const Reviews = () => {
 
 }
 
+</div>
 
 
           

@@ -5,10 +5,10 @@ const SelectColor = () => {
     let [Color,SetColor] = useState('')
 
     let SelectedColor =[
-        {color:"#f0f0f0"},
-        {color:"#FF0000"},
-        {color:'#080000'},
-        {color:'#FFC0CB'}
+        {color:"red"},
+        {color:"pink"},
+        {color:'white'},
+        {color:'blue'}
     ]
 
     let funk=(x,index) => {

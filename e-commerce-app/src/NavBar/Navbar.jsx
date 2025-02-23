@@ -25,7 +25,7 @@ const Navbar = () => {
               Shop
             </button>
             {isDropdownOpen && (
-              <div className='absolute mt-2 w-48 bg-white border rounded shadow-lg'>
+              <div className='absolute z-50 mt-2 w-48 bg-white border rounded shadow-lg'>
                 <ul>
                   <li className='px-4 py-2 hover:bg-gray-200 cursor-pointer'>Category 1</li>
                   <li className='px-4 py-2 hover:bg-gray-200 cursor-pointer'>Category 2</li>

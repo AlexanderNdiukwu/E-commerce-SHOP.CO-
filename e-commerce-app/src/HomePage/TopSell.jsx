@@ -24,10 +24,10 @@ const TopSell = () => {
 
                 {fetchedData.length  > 0 ? 
 
-                <div className="grid m-3 shadow-lg grid-cols-4 lg:gap-5 gap-1">
+                <div className="flex m-3 shadow-lg lg:overflow-x-hidden overflow-x-scroll scrollbar-hide  lg:gap-5 gap-1">
 
                     {fetchedData.map((item , index )=> 
-                         <div key={index} className="w-auto">
+                         <div key={index} className="min-w-1/2 lg:min-w-auto">
                         <Card 
                         
                         imageFit={item.imageFit}

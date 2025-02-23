@@ -1,6 +1,30 @@
+import { div } from 'framer-motion/client';
 import View from '../ButtonComponent/View'
+import { useState } from 'react';
 
 const Categorystyle = () => {
+
+    let [clicked,SetClicked] = useState('')
+
+    let styleData = [
+        {style:'Casual'},
+        {style:'Party'},
+        {style:'Former'},
+        {style:'Gym'},
+    ]
+
+
+
+
+let click = (x)=>{
+
+    console.log(x)
+    SetClicked(x)
+
+}
+
+
+
     return ( <div>
         <div className="py-10">
 
@@ -8,21 +32,13 @@ const Categorystyle = () => {
                 <p className="text-xl font-bold">Dress Style</p>
             </div>
             <div className="text-base  text-[#00000099] h-full grid gap-5">
-            <div>
-                <p>T-Shirt</p>
+           {styleData.map((item,index)=>(
+            <div key={index} onClick={()=>click(item.style)} className={`hover:bg-[#f0f0f0] ${item.style === clicked ? 'bg-black text-white rounded-3xl px-2 font-bold py-1': ''}`} >
+                {item.style}
+
             </div>
-            <div>
-                <p>Shorts</p>
-            </div>
-            <div>
-                <p>Shirts</p>
-            </div>
-            <div>
-                <p>Hoodies</p>
-            </div>
-            <div>
-                <p>Jeans</p>
-            </div>
+
+           ))}
             <div className='bg-black text-white overflow-hidden rounded-4xl border-2' >
                 <View view='Apply Filter'/>
             </div>
