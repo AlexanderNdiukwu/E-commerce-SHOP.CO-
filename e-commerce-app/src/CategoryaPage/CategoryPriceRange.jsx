@@ -18,19 +18,19 @@ const CategoryPriceRange = () => {
         <div>
             <div className="border-b-2 border-[#F0F0F0] py-10">
                 <p className="text-xl font-bold">Price</p>
-                <div className="flex items-center gap-4">
+                <div className="flex items-center ">
                     <input
                         type="range"
-                        min="50"
+                        min="0"
                         max="200"
                         value={minPrice}
                         onChange={handleMinPriceChange}
-                        className="w-full"
+                        className="w-full "
                     />
                     <input
                         type="range"
-                        min="50"
-                        max="200"
+                        min="200"
+                        max="1000"
                         value={maxPrice}
                         onChange={handleMaxPriceChange}
                         className="w-full"

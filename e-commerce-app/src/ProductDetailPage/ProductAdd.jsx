@@ -10,12 +10,15 @@ const ProductAdd = () => {
 
     let Add = () =>{
         SetQuality(c=>c+1)
+        console.log (Quatity+1)
     }
     
     let Subtract = () =>{
         if ( Quatity > 0 ){
 
             SetQuality(c=>c-1)
+        console.log (Quatity-1 )
+
 
         }
     }
@@ -36,7 +39,6 @@ const ProductAdd = () => {
 
             </p>
         </div>
-
 
 
     <div>
