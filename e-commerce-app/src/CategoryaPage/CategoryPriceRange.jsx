@@ -26,15 +26,15 @@ const CategoryPriceRange = () => {
                         value={minPrice}
                         onChange={handleMinPriceChange}
                         className="w-full "
-                    // />
-                    // <input
-                    //     type="range"
-                    //     min="200"
-                    //     max="1000"
-                    //     value={maxPrice}
-                    //     onChange={handleMaxPriceChange}
-                    //     className="w-full"
-                    // />
+                    />
+                    <input
+                        type="range"
+                        min="200"
+                        max="1000"
+                        value={maxPrice}
+                        onChange={handleMaxPriceChange}
+                        className="w-full"
+                    />
                 </div>
                 <div className="flex justify-between mt-2">
                     <span>${minPrice}</span>
