@@ -5,9 +5,6 @@ import { useState } from "react"
 const ProductAdd = () => {
     let [Quatity,SetQuality] = useState(0)
 
-
-
-
     let Add = () =>{
         SetQuality(c=>c+1)
         console.log (Quatity+1)
@@ -18,6 +15,7 @@ const ProductAdd = () => {
 
             SetQuality(c=>c-1)
         console.log (Quatity-1 )
+        console.log (Quatity)
 
 
         }
