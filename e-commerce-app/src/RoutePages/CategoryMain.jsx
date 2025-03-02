@@ -33,12 +33,8 @@ const CategoryMain = () => {
 
     const toggleFilter = () => {
 
-  
         setIsFilterOpen(!isFilterOpen);
-     
-      
-      
-   
+
     };
 
 
@@ -63,16 +59,11 @@ const CategoryMain = () => {
               className={`order-1 h-full rounded-3xl transition-all duration-500 ease-in-out transform lg:relative absolute inset-x-0 bottom-0 lg:inset-auto bg-white z-30 
               `}
             >
-            
                   <CategoryMainFilter toggleFilter={toggleFilter} />
-
-                  
+    
                 </motion.div>
-                
-            
+                        
             }
-
-
             </AnimatePresence>
 
 
