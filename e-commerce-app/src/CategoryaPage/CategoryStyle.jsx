@@ -1,10 +1,12 @@
-import { div } from 'framer-motion/client';
+
 import View from '../ButtonComponent/View'
 import { useState } from 'react';
 
 const Categorystyle = () => {
-
     let [clicked,SetClicked] = useState('')
+
+
+
 
     let styleData = [
         {style:'Casual'},
@@ -18,7 +20,7 @@ const Categorystyle = () => {
 
 let click = (x)=>{
 
-    console.log(x)
+    
     SetClicked(x)
 
 }

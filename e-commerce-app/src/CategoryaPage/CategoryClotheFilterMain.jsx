@@ -1,6 +1,8 @@
+import { useState } from "react";
 import Card from "../CardComponent.jsx/Card";
 
 const CategoryClotheFilterMain = ({ toggleFilter }) => {
+   
     let fetchedData = [
         { imageFit: 'w-full', ProductImage: '/images/CardImages/image.png', desc: 't-shirt', rating: '/images/CardImages/starRate.png', price: "$20", OriginalPrice: 'ddd ', discount: 'e' },
         { imageFit: 'w-full', ProductImage: '/images/CardImages/image.png', desc: 't-shirt', rating: '/images/CardImages/starRate.png', price: "$20", OriginalPrice: 'ddd ', discount: 'e' },

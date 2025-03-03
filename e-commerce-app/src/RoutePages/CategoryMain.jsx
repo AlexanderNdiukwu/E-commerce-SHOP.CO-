@@ -29,6 +29,9 @@ let meunbar ={
 
 const CategoryMain = () => {
     const [isFilterOpen, setIsFilterOpen] = useState(false);
+    // let [collectDat]
+    let [clicked,SetClicked] = useState('')
+
   
 
     
