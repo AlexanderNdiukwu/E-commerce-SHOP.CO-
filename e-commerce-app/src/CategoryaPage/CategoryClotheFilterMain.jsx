@@ -14,7 +14,7 @@ const CategoryClotheFilterMain = ({ toggleFilter }) => {
     ];
 
     return (
-        <div className=" h-full">
+        <div className=" h-full ">
             <div className="flex justify-between">
                 <p className="text-3xl font-bold">Casual</p>
                 <p className="hidden lg:block">

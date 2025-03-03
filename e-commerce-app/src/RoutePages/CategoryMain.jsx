@@ -13,13 +13,13 @@ let meunbar ={
   },
   visible:{
     opacity:1,y:0,
-    transition:{duration:0.5 ,ease:'easeIn'}
+    transition:{duration:0.8 ,ease:'easeIn'}
   },
 
   exit:{
     y:1000,
     opacity:0,
-    transition:{ease:'easeIn'}
+    transition:{ease:'easeInOut',duration:0.5}
   }
 }
 
@@ -58,7 +58,7 @@ const CategoryMain = () => {
                   animate="visible"
                   exit="exit"
             
-              className={`order-1 h-full rounded-3xl transition-all duration-500 ease-in-out transform lg:relative absolute inset-x-0 bottom-0 lg:inset-auto bg-white z-30 
+              className={`order-1 h-full flex lg:hidden rounded-3xl transition-all duration-500 ease-in-out transform lg:relative absolute inset-x-0 bottom-0 lg:inset-auto bg-white z-30 
             `}
             >
                   <CategoryMainFilter toggleFilter={toggleFilter} />
@@ -83,16 +83,7 @@ const CategoryMain = () => {
                 <CategoryClotheFilterMain  toggleFilter={toggleFilter}/>
             </div>
 
-{/*          
-{isFilterOpen && (
-    <div
-      className="fixed inset-0 bg-white bg-opacity-30 backdrop-blur-md z-40"
-      onClick={toggleFilter}
-    ></div>
-  )}
-    */}
-
-
+         
 
 
 
