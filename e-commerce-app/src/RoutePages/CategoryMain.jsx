@@ -36,7 +36,7 @@ const CategoryMain = () => {
     const toggleFilter = () => {
 
         setIsFilterOpen(!isFilterOpen);
-     
+    
 
     };
 
