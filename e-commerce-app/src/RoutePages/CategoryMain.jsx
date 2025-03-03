@@ -51,7 +51,8 @@ const CategoryMain = () => {
          <div className=" relative flex  flex-col-reverse lg:flex-row gap-5 border-t-2 border-[#0000001A] lg:mx-24  lg:py-5">
 
           <AnimatePresence>
-           {isFilterOpen &&   <motion.div
+           {isFilterOpen &&  
+            <motion.div
                   variants={meunbar}
                   initial="hidden"
                   animate="visible"
@@ -62,7 +63,7 @@ const CategoryMain = () => {
             >
                   <CategoryMainFilter toggleFilter={toggleFilter} />
     
-                </motion.div>
+              </motion.div>
                      }
             
               
