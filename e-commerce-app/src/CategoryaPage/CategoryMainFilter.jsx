@@ -27,7 +27,7 @@ const CategoryMainFilter = ({ toggleFilter }) => {
                 <CategorySize />
             </div>
             <div>
-                <Categorystyle />
+                <Categorystyle  />
             </div>
         </div>
     );

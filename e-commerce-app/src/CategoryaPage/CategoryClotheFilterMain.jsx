@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Card from "../CardComponent.jsx/Card";
 
-const CategoryClotheFilterMain = ({ toggleFilter }) => {
+const CategoryClotheFilterMain = ({ toggleFilter ,CategoryCall  }) => {
    
     let fetchedData = [
         { imageFit: 'w-full', ProductImage: '/images/CardImages/image.png', desc: 't-shirt', rating: '/images/CardImages/starRate.png', price: "$20", OriginalPrice: 'ddd ', discount: 'e' },
@@ -18,7 +18,7 @@ const CategoryClotheFilterMain = ({ toggleFilter }) => {
     return (
         <div className=" h-full ">
             <div className="flex justify-between">
-                <p className="text-3xl font-bold">Casual</p>
+                <p className="text-3xl font-bold">causual</p>
                 <p className="hidden lg:block">
                     this the number of the filter pages 
                 </p>
