@@ -68,7 +68,7 @@ const CategoryMain = () => {
               className={`order-1 h-full flex lg:hidden rounded-3xl transition-all duration-500 ease-in-out transform lg:relative absolute inset-x-0 bottom-0 lg:inset-auto bg-white z-30 
             `}
             >
-                 <CategoryMainFilter toggleFilter={toggleFilter}  />
+                  <CategoryMainFilter toggleFilter={toggleFilter} CategoryCall={CategoryCall}/>
     
               </motion.div>
                      }
@@ -81,13 +81,13 @@ const CategoryMain = () => {
               className={`order-1 hidden lg:block h-full rounded-3xl transition-all duration-500 ease-in-out transform lg:relative absolute inset-x-0 bottom-0 lg:inset-auto bg-white z-30 
             `}
             >
-                  <CategoryMainFilter toggleFilter={toggleFilter} />
+                  <CategoryMainFilter toggleFilter={toggleFilter} CategoryCall={CategoryData} />
     
                 </div>
 
 
             <div className='order-2 mx-3 '>
-            <CategoryMainFilter toggleFilter={toggleFilter}  />
+                <CategoryClotheFilterMain  toggleFilter={toggleFilter} CategoryCall={CategoryCall}/>
             </div>
 
          
