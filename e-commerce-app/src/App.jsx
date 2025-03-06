@@ -17,7 +17,7 @@ function App() {
 <div className="select-none">
   <AdvertPage/>
    <Navbar/>
-   this is the place of the routing 
+   {/* this is the place for the routing  */}
    
 
 
