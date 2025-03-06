@@ -5,7 +5,7 @@ import CategorySelectType from "./CategorySelectType";
 import CategorySize from "./CategorySize";
 import Categorystyle from "./CategoryStyle";
 
-const CategoryMainFilter = ({ toggleFilter ,CategoryCall}) => {
+const CategoryMainFilter = ({ toggleFilter , CategoryCall}) => {
 
 
 

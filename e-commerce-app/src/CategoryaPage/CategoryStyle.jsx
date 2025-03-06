@@ -13,7 +13,8 @@ const Categorystyle = ({ CategoryCall }) => {
 
     let click = (x) => {
         SetClicked(x);
-        // CategoryCall(x); 
+        CategoryCall(x); 
+        // console.log('this is being clicked ')
     };
 
     return (

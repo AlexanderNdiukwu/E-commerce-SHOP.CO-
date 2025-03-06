@@ -1,10 +1,40 @@
 
 
 const ReviewHeader = ({ scrollLeft, scrollRight }) => {
-    return (  <div className=" my-10 ">
+    return (  <div className=" lg:my-10 my-4 ">
         <div>
 
-            <div className="grid grid-cols-3">
+            <div className="flex justify-center">
+                <div className=" text-center ">
+                <p className="font-bold text-3xl lg:text-5xl whitespace-nowrap">OUR HAPPY CUSTOMER </p>
+                </div>
+
+            </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         {/* this is the code to bring the area where i can use the right arrow and the left arrow i dont need since the comment area is just scroll  */}
+
+
+            {/* <div className="grid grid-cols-3">
                 <div className="col-span-2">
                 <p className="font-bold text-4xl lg:text-5xl">OUR HAPPY CUSTOMER </p>
                 </div>
@@ -28,7 +58,7 @@ const ReviewHeader = ({ scrollLeft, scrollRight }) => {
 </p>
 
                 </div>
-            </div>
+            </div> */}
 
         </div>
     </div> );
